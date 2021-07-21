@@ -50,8 +50,8 @@ namespace rpg
             Console.Write($"\n{Name} the Ant bites at {opponent.Name} and ");
             if (randNum <= 50)
             {
-                Console.WriteLine("hits for 3 damage!");
-                opponent.TakeDamage(3);
+                Console.WriteLine("hits for 2 damage!");
+                opponent.TakeDamage(2);
             }
             else
             {

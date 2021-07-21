@@ -21,7 +21,7 @@ namespace rpg
             Ant Ant = new Ant("Ant", 10, ConsoleColor.Red, 2.4);
 
             Item LeafNinjaStar = new Item("Leaf Ninja Star", 10);
-            Ant HadesAnt = new Ant("Hades", 40, ConsoleColor.Magenta, 4.2);
+            Ant HadesAnt = new Ant("Hades", 20, ConsoleColor.Magenta, 4.2);
             HadesAnt.PickUpItem(LeafNinjaStar);
 
             Bee Bee = new Bee("Buzz", 15, ConsoleColor.Yellow, false);
@@ -125,7 +125,6 @@ You were not able to make it to your lab to reverse your experiment!
                 Console.Clear();
                 player.DisplayHealthBar();
                 enemy.DisplayHealthBar();
-
                 enemy.Fight(player);
 
                 WaitForKey();
